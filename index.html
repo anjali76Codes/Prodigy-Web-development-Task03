@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe Game</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>TIC-TAC-TOE</h2>
+    <div class="opponent-selection">
+      <label for="select">Select your opponent:</label>
+      <select name="player" id="select">
+        <option value="withfriend">Player</option>
+        <option value="withAI">AI</option>
+      </select>
+    </div>
+    <div id="turnDisplay">
+      Current Turn: <span id="currentPlayerDisplay">X</span>
+    </div>
+    <div id="winnerBox"></div>
+    <div class="gamecontainer">
+      <div class="container">
+        <div class="row">
+          <div onclick="handleClick(this)" id="0" class="col"></div>
+          <div onclick="handleClick(this)" id="1" class="col"></div>
+          <div onclick="handleClick(this)" id="2" class="col"></div>
+        </div>
+        <div class="row">
+          <div onclick="handleClick(this)" id="3" class="col"></div>
+          <div onclick="handleClick(this)" id="4" class="col"></div>
+          <div onclick="handleClick(this)" id="5" class="col"></div>
+        </div>
+        <div class="row">
+          <div onclick="handleClick(this)" id="6" class="col"></div>
+          <div onclick="handleClick(this)" id="7" class="col"></div>
+          <div onclick="handleClick(this)" id="8" class="col"></div>
+        </div>
+      </div>
+      <div id="resetBox">
+        <button id="reset" onclick="resetGame()">Reset</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

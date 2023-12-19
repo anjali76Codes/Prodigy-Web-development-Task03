@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #a509e7;
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+  font-size: 6vh;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+label {
+  color: rgb(35, 16, 9);
+  font-weight: bold;
+  position: relative;
+  top: 1vh;
+}
+#select {
+  background-color: orange;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  position: relative;
+  top: 1vh;
+}
+#winnerBox {
+  color: rgb(2, 242, 6);
+  margin-top: 1px;
+  font-size: 5vh;
+  font-weight: bolder;
+}
+#turnDisplay {
+  width: 15vw;
+  height: auto;
+  color: maroon;
+  text-align: center;
+  position: relative;
+  top: 10vh;
+  left: 43vw;
+  font-weight: bold;
+}
+
+.container {
+  position: relative;
+  top: 10vh;
+}
+
+.col {
+  background-color: #20f5f1;
+  width: 10vh;
+  height: 10vh;
+  border: 1px solid grey;
+  border-radius: 2px 1px 4px 3px;
+  text-align: center;
+  padding: 10px;
+  margin: 3px;
+  box-shadow: 4px 5px 1px 3px rgb(218, 215, 215);
+  font-size: 30px;
+  font-weight: bolder;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#reset {
+  width: 10vw;
+  height: 5vh;
+  background-color: #14c72c;
+  color: black;
+  position: relative;
+  top: 15vh;
+  font-weight: bold;
+}
+#reset:hover {
+  border: 2px solid brown;
+}
+.col:hover {
+  background-color: red;
+}
+@media screen and (max-width: 600px) {
+  #reset {
+    width: 33vw;
+    height: 5vh;
+    margin-left: -10px;
+  }
+  #turnDisplay {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
