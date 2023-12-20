@@ -48,6 +48,6 @@ Click on an empty cell on the game board to make a move.
 The game will alternate turns between "X" and "O."
 The first player to get three in a row (horizontally, vertically, or diagonally) wins.
 If the board is full and no player has three in a row, the game is a draw.
-#Demo
-link  :
+
+ # DEMO link  :https://anjali76codes.github.io/Prodigy-Web-development-Task03/
 
